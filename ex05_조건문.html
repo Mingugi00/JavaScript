@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //     조건문 예제
+    //     2의 배수이면서 6의 배수라면 ==> 2와 6의 배수입니다.
+    //     2와 6의 배수가 아니라면 ==> 2와 6의 배수가 아닙니다.
+    //    let input = parseInt(prompt('숫자를 입력하세요.'));
+        
+    //    if(input % 2 === 0 && input % 6 === 0 ){
+    //        console.log(`${input}은(는)2와 6의 배수입니다.`);
+    //     }else{
+    //        console.log(`${input}은(는)2와 6의 배수가 아닙니다.`);
+    //    }
+            
+        // let input1 = parseInt(prompt('첫 번째 숫자를 입력하세요.'));
+        // let input2 = parseInt(prompt('두 번째 숫자를 입력하세요.'));
+
+        // if(input1>input2){
+        //     console.log('첫 번째 입력한 값이 더 큰 수 입니다.');
+        // }else if (input1<input2){
+        //     console.log('두 번째 입력한 값이 더 큰 수 입니다.');
+        // }else {
+        //     console.log('두 수는 같습니다');
+        // }
+
+        // switch문 예제
+        // prompt 사용해서 입력 값 받기
+        // 입력받은 값을 --> 짝수인지, 홀수인지 ==> switch(조건식) ==> 나온 값을 case와
+        // 비교를 통해 콘솔창에 짝수입니다, 홀수입니다.출력하기
+
+        // let input = prompt('숫자를 입력하세요');
+        // switch(input % 2 ){
+        //     case  0 :
+        //         console.log('짝수입니다.');
+        //         break;
+        //     case  1 :
+        //         console.log('홀수입니다.');
+        //         break;
+        //     default :
+        //         console.log('숫자를 다시 입력해주세요.');
+        //         break;
+                
+        // }
+
+        // let num =1 ;
+
+        // while(num <= 10){
+        //     console.log('JavaScript재밌다!');
+        //     num ++;
+        //     break;
+        // }
+
+        // let num1 = 1;
+
+        // while (true){
+        //     console.log(num1);
+        //     num1++;
+
+        //     // 조건문을 사용해서 코드를 끝내기
+        //     if(num1 ===11){
+        //         console.log('프로그램을 종료합니다');
+        //         break;
+        //     }
+            
+        // }
+        let result = 0;
+        while(true){
+            let input = parseInt(prompt('숫자를 입력하세요.'));
+            result=result+input;
+            
+            if(input===0){
+                console.log('프로그램을 종료합니다.');
+                break;
+            }else{
+                console.log('더한 결과:',result);
+                
+            }
+        }
+        
+
+    </script>
+</body>
+</html>
