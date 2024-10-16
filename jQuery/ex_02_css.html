@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <h1>jQuery 활용해보기</h1>
+    <h2>jQuery Style</h2>
+    <button id="h1">h1click</button>
+    <button id="h2">h2click</button>
+
+    <script>
+        $('#h1').click(()=>{
+            $('h1').css('color','red');
+        })
+        $('#h2').click(()=>{
+            console.log('click');
+
+            //객체형태로 입력
+            $('h2').css({
+                'color' : 'salmon',
+                'background-color' : 'lightblue',
+                'font-style' : 'italic'
+            })
+            
+        })
+    </script>
+</body>
+</html>

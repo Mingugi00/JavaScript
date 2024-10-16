@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>클릭 한번 해볼까요?</h1>
+    <button onclick="mkH1()">h1태그 생성</button>
+    <button onclick="mkA()">a태그 생성</button>
+    <button onclick="mkUl()">ul태그 생성</button>
+    <!-- 생성한 태그를 누적할 공간-->
+     <div id="divTag"></div>
+
+     <script>
+        // 1. 글자를 누적해줄 공간인 div 가지고 오기
+        let divVal = document.getElementById('divTag');
+        
+        // 2. 함수 별로 가지고 온 내용을 div 안에 누적하기
+        // 3. 함수 선언부안에 로직을 작성
+        // divVal -> innerHTML을 활용해서 텍스트를 누적
+        const mkH1 = () => {
+            divVal.innerHTML += '<h1>Dom 활용하기</h1>';
+        }
+        const mkA = () => {
+            divVal.innerHTML += '<a href = "https://www.google.com">Google로 이동!</a>';
+        }
+
+        const mkUl = () => {
+            divVal.innerHTML += '<ul><li>HTML<li>CSS<li>JS</ul>';
+        }
+     </script>
+</body>
+</html>

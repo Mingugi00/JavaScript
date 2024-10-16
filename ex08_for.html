@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // for (let i = 100; i >0; i--) {
+        //     console.log(i);
+            
+        // }
+        let evenSum = 0; //짝수의 합
+        let oddSum = 0;// 홀수의 합
+        let even = '';// 짝수 숫자
+        let odd = '';// 홀수 숫자
+
+        
+        for (let i=1; i<21; i++){
+            if(i%2===0){
+                even += i+' ';
+                evenSum += i;
+            }else{
+                odd += i+' ';
+                oddSum += i;
+            }
+
+        }
+        
+        console.log(even,'의 합 :',evenSum);
+        console.log(odd,'의 합 :',oddSum);
+        
+        
+    </script>
+</body>
+</html>

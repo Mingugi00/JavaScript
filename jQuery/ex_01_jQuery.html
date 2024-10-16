@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <p>jQuery start</p>
+    <button id="textBtn">TEXT</button>
+    <button id="htmlBtn">HTML</button>
+
+    <script>
+        // jQuery / $
+        // 제이쿼리를 의미하면서 제이쿼리에 접근할 수 있는 식별자
+
+        // 1. p태그에 접근
+        let valJS = document.querySelector('p');
+        console.log(valJS);
+
+        // 2. jQ객체로 반환
+        let valJQ = $('p');
+        console.log(valJQ);
+
+        // text버튼 클릭 시 내용을 변경
+        $('#textBtn').click(()=>{
+            // p태그에 접근
+            $('p').text('내용 변경');
+        })
+        
+        // html버튼 클릭 시 내용을 변경
+        $('#htmlBtn').click(()=>{
+            // innerHTML -> .html()
+            $('p').html('<a href="#">a태그로 변경</a>')
+        })
+        
+    </script>
+</body>
+</html>

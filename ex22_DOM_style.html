@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Java Script</p>
+    <p>CSS</p>
+
+    <span id="spanTag">아래 버튼을 클릭하세요</span>
+    <br>
+    <button onclick="clickFunc()">클릭</button>
+
+    <script>
+        // p요소객체 접근하기
+        let pTag = document.getElementsByTagName('p');
+
+        console.log(pTag);
+        
+        // HTMLCoollection(유사배열) 내 요소를 접근하기
+        console.log(pTag[0]);
+        console.log(pTag[1]);
+
+        pTag[0].style.backgroundColor = 'black';
+        pTag[0].style.color = 'red';
+        pTag[0].style.fontSize = '32px';
+        
+        let spanTag = document.querySelector('span');
+
+
+        const clickFunc = () => {
+            spanTag.style.color = 'red';
+            spanTag.style.backgroundColor = 'green';
+        }
+        
+    </script>
+</body>
+</html>

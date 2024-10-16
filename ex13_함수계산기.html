@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 함수 계산기 
+        // prompe 3개 생성 ==> 숫자입력 프롬프트2개 연산기호 프롬프트1개
+        // 함수 생성 ==> 함수명: calculator
+        // 함수 로직을 ==> 조건문으로 생성
+        // 내가 입력한 연산기호에 따라 결과값을 출력
+        let num1 = parseInt(prompt('첫 번째 숫자 입력'));
+        let num2 = parseInt(prompt('두 번째 숫자 입력'));
+        let operator = prompt('연산할 기호 입력');
+
+        function calculator(num1,num2,operator){
+            if(operator === '+'){
+               console.log(`더한결과는 : ${num1+num2}`);
+            }else if(operator === '-'){
+                console.log(`뺸결과는 : ${num1-num2}`);
+            }else if (operator === '*'){
+                console.log(`곱한결과는 : ${num1*num2}`);
+            }else if (operator === '/'){
+                console.log(`나눴을때 결과는 : ${num1/num2}`);
+            }else if(operator==='%'){
+                console.log(`나머지는 : ${num1%num2}`);
+            }else{
+                console.log('연산자 외 문자는 입력하지마세요.');
+            }
+        }
+        calculator(num1,num2,operator)
+        
+
+    </script>
+</body>
+</html>

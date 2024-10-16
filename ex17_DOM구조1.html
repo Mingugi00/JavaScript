@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1Tag">DOM 사용하기</h1>
+
+    <ul>
+        <li>Html</li>
+        <li>CSS</li>
+        <li>JS</li>
+    </ul>
+    <script>
+        // document -> 문서
+        // . -> 접근을 하겠다
+        // get -> 가지고 오겠다
+        // Element -> 요소
+        // ById -> 아이디 속성 값을 통해서
+        let h1Element = document.getElementById('h1Tag');
+        console.log(h1Element);
+
+        let liElements = document.querySelectorAll('li');
+        console.log(liElements);
+        
+        // for문 적용
+        for(let i=0; i<liElements.length; i++){
+            console.log(liElements[i].textContent);
+            
+        }
+    </script>
+</body>
+</html>

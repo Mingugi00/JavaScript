@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1. 빈 배열 array를 생성 후 크기를 출력
+        let array = [];
+
+        // 2. 35,73,68,82,94 총 5개의 데이터를 저장
+        console.log(array.length); 
+        array.push(35,73,68,82,94);
+        console.log(array);
+        
+        // 3. 모든 데이터를 반복문을 활용하여 출력
+        for (let i=0; i<array.length;i++) {
+            console.log(array[i]);
+        }
+
+        // 4. 3번째 요소(68)를 100으로 수정
+        array[2]= 100;
+        console.log(array);
+
+        // 5. 2번째 요소(73)를  삭제
+        array.splice(1,1);
+        console.log(array);
+        
+
+        
+    </script>
+</body>
+</html>

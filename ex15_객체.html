@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 객체 : 여러데이터를 하나의 변수에 저장할 수 있는 데이터 타입
+        // 구체 : {key1:value1,k2:v2, ....}
+        // key : 객체의 속성(property)
+        // value : 속성의 값 / 기본 자료형, 참조 자료형
+
+        // 사용자 정의 객체 생성
+
+        let person = {
+            name : '이대한민국',
+            age : 25,
+            male : true,
+            favorite : {
+                food : 'pizza',
+                drink : 'coffee'
+            },
+            epl : ['은쿤쿠','아자르','실바'],
+            intre : () => {
+                console.log('JS 사용자 정의 객체');
+                
+            }
+        }
+        
+        // 객체 접근
+        console.log(person);
+        console.log('이름 :',person.name);
+        // 나이, 남성, 은쿤쿠
+        console.log('나이 :',person.age);
+        console.log('남자 :',[person.male]);
+        console.log('은쿤쿠 :',person.epl[0]);
+        // 함수 로직 실행
+        person.intre();
+
+        // 속성 값 변경 및 추가
+        person.name = '오대한민국';
+        console.log('이름변경 : ',person.name);
+
+        person.height = 200;
+        console.log('키 : ', person.height);
+        console.log(person);
+        
+        
+        
+        
+        
+        
+    </script>
+    
+</body>
+</html>

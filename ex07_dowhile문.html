@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // dowhile문 예제
+        // 1. do-while문을 사용해서 10까지 출력해보기
+        let num = 1;
+        
+        do{
+            console.log(num);
+            num +=1;
+        }while(num<=10)
+        
+        // 2. 배수를 구하기 (~100) ==> 입력한 숫자의 배수를 구하기
+        // 입력기능 ==> prompt() / 5 ==> 5,10,15,20.....
+        let num1 = parseInt(prompt('숫자를 입력하세요'));
+        let i = 1;
+        do{
+            if(i% num1 ===0){
+                console.log(i);
+
+            }
+            i++ ;
+        }while(i<=100)
+    </script>
+</body>
+</html>

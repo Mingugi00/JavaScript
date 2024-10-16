@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <h1>Event 지정</h1>
+    <h2>이벤트 확인1</h2>
+    <p>이벤트 확인2</p>
+    <span>addEvent</span>
+    <br>
+    <br>
+    <h3>객체 형식</h3>
+    <button>change</button>
+
+    <script>
+        // 1. change 버튼을 클릭했을때
+        // h1 태그안에 있는 텍스트 색상을 파란색
+        $('button').click(()=>{
+            $('h1').css('color','blue');
+        })
+        // 2. Event지정이라는 텍스트에 마우스를 올렸을때
+        // 글자색 붉은색으로 내려왔을때 다시 검정색으로
+        // mouseover, mouseout
+        $('h1').mouseover(()=>{
+            $('h1').css('color','red');
+        })
+        $('h1').mouseout(()=>{
+            $('h1').css('color','black')
+        })
+        // 3. 이벤트확인1(텍스트) 클릭 시
+        // 내용 변경 ==> a태그를 사용해서
+        $('h2').click(()=>{
+            $('h2').html('<a href="#">a태그로변경</a>')
+        })
+        // 4. 이벤트확인2(텍스트) 클릭시
+        // 텍스트 스타일 변경 ==> 글자색,
+        $('p').click(()=>{
+            $('p').css({
+                'color' : 'white',
+                'background-color' : 'orange'
+            })
+        })
+
+        // 객체형식으로 다수 이벤트 지정하기
+        $('span').on({
+            'mouseover' : ()=>{
+                $('span').css({
+                    'color' : 'white',
+                    'background-color' : 'tomato',
+                    'font-size' : '32px'
+                })
+            },
+            'mouseout' : ()=>{
+                $('span').css({
+                    'color' : 'black',
+                    'background-color' : 'white',
+                    'font-size' : '16px'
+                })
+            }
+        })
+    </script>
+</body>
+</html>

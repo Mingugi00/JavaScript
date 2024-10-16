@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="inputTag">
+    <button onclick="getInput()">클릭</button>
+    <input type="text" id="inputTag2">
+    <button onclick="getInput2()">h1태그 클릭</button>
+
+    <script>
+        const getInput = () => {
+            // ID값을 통해서 input태그의 정보를 가져오기
+            let input = document.getElementById('inputTag');
+            // 출력은(alert)을 사용해서 메서드 활용해보기
+            alert(input.value);
+            //입력요소명.value
+        }
+
+        const getInput2 = () => {
+            //ID값을 통해서 input태그의 정보를 가져오기
+            // 출력은(document.write)을 사용해서 메서드 활용해보기
+            // 입력요소명.value
+            let input2 = document.getElementById('inputTag2');
+            document.write('<h1>'+input2.value+'</h1>');
+        }
+    </script>
+</body>
+</html>

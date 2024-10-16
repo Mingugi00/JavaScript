@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img
+    src="https://file3.instiz.net/data/cached_img/upload/2018/09/17/0/e2783ebeb5d9f61c9b0cafb250de1d44.jpg"
+    width="300px"
+    id="imgId"
+    class="imgClass"
+    >
+
+    <br>
+    <button>이미지 변경</button>
+
+    <script>
+        let src1="https://file3.instiz.net/data/cached_img/upload/2018/09/17/0/e2783ebeb5d9f61c9b0cafb250de1d44.jpg"
+        let src2="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-dRPIw0PhP7sU0WenIqOJPC0gaPncORx0dQ&s"
+        let btn = document.querySelector('button');
+
+        btn.addEventListener('click',()=>{
+            //이미지 요소 가져오기
+            let img = document.getElementById('imgId');
+            img = document.getElementsByClassName('imgClass')[0];
+            img = document.querySelector('img');
+            img = document.querySelector('#imgId');
+            img = document.querySelector('.imgClass');
+            //src 속성을 비교해서
+            if(img.src === src1){
+                img.src = src2
+            }else{
+                img.src = src1
+            }
+        })
+    </script>
+</body>
+</html>

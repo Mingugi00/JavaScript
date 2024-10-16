@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id ="tit">오늘<strong>날씨</strong>가 흐립니다.</h1>
+    <script>
+        //HTML 요소객체접근
+       let tit =  document.getElementById('tit')
+       console.log(tit.innerText);
+       console.log(tit.innerHTML);
+       
+       //값 변경
+        //tit.innerText = '<a href = "#"> DOM배우는중</a>'
+       tit.innerHTML = '<a href = "https://www.naver.com"> DOM배우는중</a>'
+
+       
+    </script>
+</body>
+</html>

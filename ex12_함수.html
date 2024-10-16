@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function greet() {
+            console.log('오늘은 JS 시간입니다.');
+            
+        }
+
+        greet()
+        greet()
+        
+        // 매개변수 활용
+        function greet_name(name) {
+            console.log(`안녕하세요. 저는${name} 입니다`);
+        }
+
+        greet_name('이대한민국');
+
+        // 두 숫자를 연산하여 결과값을 출력하는 sum() 함수 구현
+        function sum(num1,num2) {
+            console.log(`${num1}와 ${num2}의 더한결과: ${num1+num2}`);
+            
+        }
+        sum(4,8);
+        sum(10,12);
+
+        // return문을 활용해서 함수 만들기
+        function sum2(num3,num4) {
+            return num3 + num4;
+        }
+
+        let result = sum2(5,10);
+        console.log(`더한결과:${result}`);
+        
+
+    </script>
+</body>
+</html>

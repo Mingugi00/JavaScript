@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //함수표현식
+        const func = function(){
+            console.log('함수표현식 실행');
+        }
+
+        func();
+
+        const addNumber = function(num1,num2){
+            console.log(`${num1}과${num2}의 더한 결과:${num1+num2}`);
+        }
+        addNumber(7,7);
+        addNumber(8,3);
+
+        // 화살표 함수
+        // * functuin 키워드 생략 / 매개변수가 1개일 경우 소괄호 생략
+        // * {} 내 하나의 문장이며, 반환해야하는 값인 경우 return과 {} 생략가능
+        
+        const func2 = () => {
+            console.log('화살표 함수 실행');
+            
+        }
+        func2();
+
+        // 화살표 함수 예제
+        const greet = () => {
+            console.log('월요일 오후 수업입니다.');
+            
+        }
+
+        greet();
+        
+        const greet2 = (name) => {
+            console.log(`안녕 나는 ${name}이라고 해`);
+        }
+
+        greet2('이대한민국');
+
+        const greet3 = js => {
+            console.log(`저는 ${js}중 입니다.`);
+            
+        }
+        greet3('수업');
+
+        const greet4 =(name2) => {
+            return `안녕하세요 저는 ${name2}입니다요`
+        }
+
+        console.log(greet4('김대한민국'));
+
+        const greet5 = name3 => `안녕하세요 저는 ${name3}`
+
+        console.log(greet5('오대한민국'));
+        
+         
+    </script>
+</body>
+</html>

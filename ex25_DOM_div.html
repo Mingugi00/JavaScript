@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+        }
+
+        #redBox{
+            background-color: red;
+        }
+        #blueBox{
+            background-color: blue;
+        }
+        #greenBox{
+            background-color: green;
+        }
+        #grayBox{
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div id="redBox"></div>
+    <div id="blueBox"></div>
+    <div id="greenBox"></div>
+    <div id="grayBox"></div>
+    <button class="move">이동하기</button>
+    <button class="radius">둥글게!</button>
+
+    <script>
+        // 이동하기 버튼을 클릭 할 때, 요소명.style.property = 값
+        // 블루색상 제외하고 나머지 색상의 요소정보, 버튼요소정보들도 가지고오기
+        let blue = document.querySelector('#blueBox');
+        let red = document.querySelector('#redBox');
+        let green = document.querySelector('#greenBox');
+        let gray = document.querySelector('#grayBox');
+        let move = document.querySelector('.move');
+        let radius = document.querySelector('.radius');
+        
+        // 이동하기 버튼을 클릭했을 때 red색상을 제외한 나머지 div요소들을 이동하기
+        // 요소명.style.property ='값'설정
+       
+        move.addEventListener('click',()=>{
+            blue.style.marginLeft = '100px'
+            green.style.marginLeft = '200px'
+            gray.style.marginLeft = '300px'
+        })  
+
+       // 둥글게 버튼을 클릭했을 때 ==> 적용할 속성
+       // borderTopRightRadius = '50%'
+       // borderBottomLeftRadius = '50%'
+       // 응용단계 ==> queryselectorAll ==> 유사배열 ==>NodeList
+       // 유사배열 ==> 반복문을 활용해서 속성 값 넣어보기
+
+       let divList = document.querySelectorAll('div');
+       for(let i=0; i<divList.length; i++){
+            console.log(divList[i])
+            
+        }
+            radius.addEventListener('click',()=>{
+                for(let i=0; i<divList.length; i++){
+                    divList[i].style.borderTopRightRadius = '50%'
+                    divList[i].style.borderBottomLeftRadius = '50%'
+                }
+                
+            })
+       </script>
+</body>
+</html>
